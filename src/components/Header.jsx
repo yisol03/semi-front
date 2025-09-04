@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container, Form } from 'react-bootstrap';
 import { List, Gear, Bell, Search } from 'react-bootstrap-icons';
 
@@ -36,7 +37,7 @@ const Header = ({ onShowSidebar }) => {
                         <Nav.Link href="#" className="d-none d-lg-block">
                             <Bell size={20} />
                         </Nav.Link>
-                        <Nav.Link href="#" className="ms-3">
+                        <Nav.Link as={Link} to="/login" className="ms-3">
                             <img
                                 src="https://via.placeholder.com/32"
                                 className="profile-pic rounded-circle"
